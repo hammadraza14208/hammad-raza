@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/hamad-raza/Documents/Video%20Graphy%20Agency%20Work/app/not-found.tsx"],"sourcesContent":["import Link from \"next/link\";\n\nexport default function NotFound() {\n  return (\n    <section className=\"section-space\">\n      <div className=\"container-shell text-center\">\n        <span className=\"eyebrow\">404</span>\n        <h1 className=\"mt-6 text-5xl font-semibold tracking-[-0.04em]\">\n          This page stepped out of frame.\n        </h1>\n        <p className=\"mx-auto mt-5 max-w-2xl body-lg\">\n          The content you were looking for is unavailable or has moved.\n        </p>\n        <Link\n          href=\"/\"\n          className=\"mt-8 inline-flex rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background\"\n        >\n          Return Home\n        </Link>\n      </div>\n    </section>\n  );\n}\n"],"names":["NotFound","className","href"],"mappings":";;;;;AAAA;;;AAEe,SAASA;IACtB,qBACE,8OAAC;QAAQC,WAAU;kBACjB,cAAA,8OAAC;YAAIA,WAAU;;8BACb,8OAAC;oBAAKA,WAAU;8BAAU;;;;;;8BAC1B,8OAAC;oBAAGA,WAAU;8BAAiD;;;;;;8BAG/D,8OAAC;oBAAEA,WAAU;8BAAiC;;;;;;8BAG9C,8OAAC,0LAAI;oBACHC,MAAK;oBACLD,WAAU;8BACX;;;;;;;;;;;;;;;;;AAMT"}}]
+}

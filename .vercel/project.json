@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_UyVXBM0vZfXO2t8UjOyFIKcEyCcD",
+  "orgId": "team_dHY8pZP95Pv3mG04EFVhkz22",
+  "projectName": "video-graphy-agency",
+  "settings": {
+    "createdAt": 1776854680534,
+    "framework": "nextjs",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}

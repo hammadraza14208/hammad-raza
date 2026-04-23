@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 248 246 240;
+  --foreground: 15 23 42;
+  --surface: 255 255 255;
+  --border: 148 163 184;
+  --accent: 184 134 11;
+  --muted: 71 85 105;
+  color-scheme: light;
+}
+
+.dark {
+  --background: 10 10 12;
+  --foreground: 244 244 245;
+  --surface: 20 20 24;
+  --border: 63 63 70;
+  --accent: 212 175 55;
+  --muted: 161 161 170;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-sans), sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(212, 175, 55, 0.14), transparent 34%),
+    radial-gradient(circle at top right, rgba(99, 102, 241, 0.1), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0)),
+    rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(212, 175, 55, 0.12), transparent 32%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 26%),
+    linear-gradient(180deg, rgba(24, 24, 27, 0.55), rgba(10, 10, 12, 0)),
+    rgb(var(--background));
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.22);
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-panel {
+    @apply border border-white/15 bg-white/65 backdrop-blur-xl dark:border-white/10 dark:bg-white/5;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center rounded-full border border-accent/25 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-accent;
+  }
+
+  .headline-xl {
+    font-family: var(--font-display), serif;
+    @apply text-5xl font-semibold leading-[0.94] tracking-[-0.04em] sm:text-6xl lg:text-7xl;
+  }
+
+  .headline-lg {
+    font-family: var(--font-display), serif;
+    @apply text-4xl font-semibold leading-tight tracking-[-0.04em] sm:text-5xl;
+  }
+
+  .body-lg {
+    @apply text-lg leading-8 text-foreground/75 dark:text-foreground/70;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-foreground/70 hover:text-foreground;
+  }
+
+  .section-space {
+    @apply py-20 sm:py-24 lg:py-32;
+  }
+}
