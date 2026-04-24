@@ -9,8 +9,7 @@ export function Hero() {
         <div className="max-w-4xl space-y-8">
           <span className="eyebrow">Luxury Digital Atelier</span>
           <h1 className="headline-xl">
-            We design brand experiences that feel inevitable, cinematic, and
-            unmistakably premium.
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga aliquid quae esse facere sit nulla modi in, corporis sequi non debitis odit!
           </h1>
           <p className="max-w-2xl body-lg">
             Lumina Atelier partners with ambitious brands to build refined websites,
